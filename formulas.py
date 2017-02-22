@@ -17,7 +17,7 @@ loopProg = True
 
 while loopProg:
 	print("0) Exit\n1) BMI Calculator\n2) Retirement\n3) Distance")
-	usrInput = input("\nWhich would you like to calculate? (0-3) ")
+	usrInput = int(input("\nWhich would you like to calculate? (0-3) "))
 	
 	if usrInput == 0:
 		loopProg = False
