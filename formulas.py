@@ -1,5 +1,6 @@
 #/bin/python3
 import math
+import re
 
 def BMICalc(usrWeight, usrHeight):
 	return (usrWeight / ((usrHeight**2) * 703))
@@ -11,7 +12,7 @@ def distCalc(x1, x2, y1, y2):
 	return (math.sqrt(((x2 - x1)**2) + ((y2 - y1)**2)))
 
 def emailVerify(usrEmail):
-	pass
+	return bool(re.match("\w\w*@\w\w*.[a-zA-Z]{3}$", usrEmail))
 
 loopProg = True
 
