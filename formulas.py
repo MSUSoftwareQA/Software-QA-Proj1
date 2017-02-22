@@ -10,10 +10,10 @@ import math
 import re
 
 def BMICalc(usrWeight, usrHeight):
-	return (usrWeight / ((usrHeight**2) * 703))
+	return ((usrWeight / (usrHeight**2)) * 703)
 
-def retCalc(usrAge, usrSal, usrSav):
-	return (usrAge + math.floor(usrSav / (usrSal * (usrSav / 100))))
+def retCalc(usrAge, usrSal, usrSav, savGoal):
+	return int(usrAge + math.floor(savGoal / (usrSal * (usrSav / 100))))
 
 def distCalc(x1, x2, y1, y2):
 	return (math.sqrt(((x2 - x1)**2) + ((y2 - y1)**2)))
@@ -24,6 +24,7 @@ def emailVerify(usrEmail):
 loopProg = True
 
 while loopProg:
+	print("\n\n=== Main Menu ===\n\n")
 	print("0) Exit\n1) BMI Calc\n2) Retirement Calc\n3) Distance Calc\n4) Email Verify")
 	usrInput = int(input("\nWhich would you like to run? (0-4) "))
 	
@@ -33,30 +34,30 @@ while loopProg:
 		loopProg = False
 	elif usrInput == 1:
 		print("\n\n### BMI Calculator ###\n\n")
-		weightInput = input("Weight (lbs): ")
-		heightInput = input("Height (inches): ")
+		weightInput = int(input("Weight (lbs): "))
+		heightInput = int(input("Height (inches): "))
 
 		usrBMI = BMICalc(weightInput, heightInput)
 
-		print("\nBMI: " + usrBMI)
+		print("\nBMI:", usrBMI)
 		if usrBMI <= 18.5:
-			print("You are underweight.\n\n")
+			print("You are underweight.")
 		elif usrBMI < 25:
-			print("You are at a normal weight.\n\n")
+			print("You are at a normal weight.")
 		elif usrBMI < 30:
-			print("You are overweight.\n\n")
+			print("You are overweight.")
 		else:
-			print("You are obese.\n\n")
+			print("You are obese.")
 	elif usrInput == 2:
 		print("\n\n### Retirement Calculator ###\n\n")
-		usrAge = input("Current age: ")
-		usrSalary = input("Annual salary: ")
-		savePerc = input("Savings percentage: ")
-		saveGoal = input("Savings goal amount: ")
+		usrAge = int(input("Current age: "))
+		usrSalary = int(input("Annual salary: "))
+		savePerc = int(input("Savings percentage: "))
+		saveGoal = int(input("Savings goal amount: "))
 
-		goalAge = retCalc(usrAge, usrSalary, savePerc)
+		goalAge = int(retCalc(usrAge, usrSalary, savePerc, saveGoal))
 
-		print("Age you will meet your goal: " + goalAge)
+		print("Age you will meet your goal:", goalAge)
 		if goalAge >= 100:
 			print("You will not meet your goal.")
 		else:
@@ -70,7 +71,7 @@ while loopProg:
 
 		distRes = distCalc(loc1X, loc2X, loc1Y, loc2Y)
 
-		print("The distance between your two points is", distRes)
+		print("Distance between the two points:", distRes)
 	elif usrInput == 4:
 		print("\n\n### Email Verifier ####\n\n")
 		emailInput = input("What email would you like to verify? ")
