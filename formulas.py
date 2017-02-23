@@ -6,20 +6,7 @@
 # Patrick Boudreaux - pdb145
 # Damian Cooper - dcc198
 
-import math
-import re
-
-def BMICalc(usrWeight, usrHeight):
-	return ((usrWeight / (usrHeight**2)) * 703)
-
-def retCalc(usrAge, usrSal, usrSav, savGoal):
-	return int(usrAge + math.floor(savGoal / (usrSal * (usrSav / 100))))
-
-def distCalc(x1, x2, y1, y2):
-	return (math.sqrt(((x2 - x1)**2) + ((y2 - y1)**2)))
-
-def emailVerify(usrEmail):
-	return bool(re.match("\w\w*@\w\w*.[a-zA-Z]{3}$", usrEmail))
+import functions
 
 loopProg = True
 
@@ -37,7 +24,7 @@ while loopProg:
 		weightInput = int(input("Weight (lbs): "))
 		heightInput = int(input("Height (inches): "))
 
-		usrBMI = BMICalc(weightInput, heightInput)
+		usrBMI = functions.BMICalc(weightInput, heightInput)
 
 		print("\nBMI:", usrBMI)
 		if usrBMI <= 18.5:
@@ -55,7 +42,7 @@ while loopProg:
 		savePerc = int(input("Savings percentage: "))
 		saveGoal = int(input("Savings goal amount: "))
 
-		goalAge = int(retCalc(usrAge, usrSalary, savePerc, saveGoal))
+		goalAge = int(functions.retCalc(usrAge, usrSalary, savePerc, saveGoal))
 
 		print("Age you will meet your goal:", goalAge)
 		if goalAge >= 100:
@@ -69,14 +56,14 @@ while loopProg:
 		loc2X = int(input("Location 2 X: "))
 		loc2Y = int(input("Location 2 Y: "))
 
-		distRes = distCalc(loc1X, loc2X, loc1Y, loc2Y)
+		distRes = functions.distCalc(loc1X, loc2X, loc1Y, loc2Y)
 
 		print("Distance between the two points:", distRes)
 	elif usrInput == 4:
 		print("\n\n### Email Verifier ####\n\n")
 		emailInput = input("What email would you like to verify? ")
 		
-		if emailVerify(emailInput):
+		if functions.emailVerify(emailInput):
 			print(emailInput + " is a valid email address.")
 		else:
 			print(emailInput + " is not a valid email address.")
