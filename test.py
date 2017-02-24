@@ -27,3 +27,4 @@ def test_Email():
 	assert functions.emailVerify("@.edu") == False
 	assert functions.emailVerify("alc552.msstate@edu") == False
 	assert functions.emailVerify("dddd@dddd") == False
+	assert functions.emailVerify("dddddddddddd@ddddddddd") == False
