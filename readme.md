@@ -7,7 +7,7 @@
 	* Installation instructions and guide: https://wiki.python.org/moin/BeginnersGuide
 	* Version used for development and testing: 3.6.0
 * [pip](https://pypi.python.org/pypi/pip)
-	* Just needed to pytest. Under the package name of "python-pip" in most Linux repos.
+	* Just needed to pytest. Under the package name of "python-pip" or "python3-pip" in most Linux repos.
 	* Full installation instructions here: https://pip.pypa.io/en/stable/installing/
 	* Version used for development and testing: 9.0.1 (python 3.6)
 * [pytest](http://docs.pytest.org/en/latest/)
