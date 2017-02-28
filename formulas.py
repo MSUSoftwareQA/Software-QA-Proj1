@@ -51,10 +51,10 @@ while loopProg:
 			print("You can meet your goal!")
 	elif usrInput == 3:
 		print("\n\n### Distance Calculator ###\n\n")
-		loc1X = int(input("Location 1 X: "))
-		loc1Y = int(input("Location 1 Y: "))
-		loc2X = int(input("Location 2 X: "))
-		loc2Y = int(input("Location 2 Y: "))
+		loc1X = float(input("Location 1 X: "))
+		loc1Y = float(input("Location 1 Y: "))
+		loc2X = float(input("Location 2 X: "))
+		loc2Y = float(input("Location 2 Y: "))
 
 		distRes = functions.distCalc(loc1X, loc2X, loc1Y, loc2Y)
 
