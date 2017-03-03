@@ -13,6 +13,7 @@ def test_BMI():
 	assert functions.BMICalc(12, 23) == 15.947069943289225 #Alex
 	assert functions.BMICalc('a', 23) != 20 #Pat
 	assert functions.BMICalc("a","b") == 0 #Ginny
+	print("All BMICalc() tests passed.")
 
 def test_Ret():
 	assert functions.retCalc(20, 40000, 30, 50000) == 24 #Alex
@@ -21,6 +22,7 @@ def test_Ret():
 	assert functions.retCalc('a', 23,"g", 50) != 20 #Pat
 	assert functions.retCalc(-0, 45, -45, 0) == 0 #Pat
 	assert functions.retCalc("a", "food", 5, "hello") == 0 #Ginny
+	print("All retCalc() tests passed.")
 
 def test_Dist():
 	assert functions.distCalc(5, 5, 10, 5) == 5 #Alex
@@ -28,6 +30,7 @@ def test_Dist():
 	assert functions.distCalc(9999, 12, 3, 45920) == 46990.54221862097 #Alex
 	assert functions.distCalc('a', 23, 200,30) != 20 #Pat
 	assert functions.distCalc(-11, -100, 5, 90) == 123.0690862889621 #Ginny
+	print("All distCalc() tests passed.")
 
 def test_Email():
 	assert functions.emailVerify("alc552@msstate.edu") == True #Alex
@@ -39,3 +42,4 @@ def test_Email():
 	assert functions.emailVerify("dddd@dddd") == False #Pat
 	assert functions.emailVerify("dddddddddddd@ddddddddd") == False
 	assert functions.emailVerify(11) == False #Ginny
+	print("All emailVerify() tests passed.")

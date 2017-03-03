@@ -15,18 +15,23 @@
 	* Installation instructions and guide: http://docs.pytest.org/en/latest/getting-started.html
 	* Version used for development and testing: 3.0.6
 
-## Running tests
-
-1. Open shell and move to the "Source" directory of the project files.
-2. Run the test with: pytest test.py
-	* If all tests have passed, a green success message will appear telling you how many of the tests have passed.
-	* If any of the tests fail, a red failure message will be printed showing which of the tests have failed and where.
-
-Each test within the [test.py](https://github.com/MSUSoftwareQA/Software-QA-Proj1/blob/master/test.py) file checks each of the functions within [functions.py](https://github.com/MSUSoftwareQA/Software-QA-Proj1/blob/master/functions.py). Each one of the tests runs multiple checks for all types of inputs that could be given to them.
-
 ## Running the program
 
 1. Open shell and move to the "Source" directory of the project files.
 2. Run: python3 main.py
 
 The program will then step you through how to run each part of the program.
+
+## Running tests
+
+1. Open shell and move to the "Source" directory of the project files.
+2. Run the test with: pytest test.py
+	* If all tests have passed, a green success message will appear telling you how many of the tests have passed.
+	* If any of the tests fail, a red failure message will be printed showing which of the tests have failed and where.
+	* If you would like to see individual function test passing messages, you can run the test with: pytest -s test.py
+
+Each test within the [test.py](https://github.com/MSUSoftwareQA/Software-QA-Proj1/blob/master/test.py) file checks each of the functions within [functions.py](https://github.com/MSUSoftwareQA/Software-QA-Proj1/blob/master/functions.py). Each one of the tests runs multiple checks for all types of inputs that could be given to them.
+
+### Tests Passing:
+
+![Tests passing](https://raw.githubusercontent.com/MSUSoftwareQA/Software-QA-Proj1/master/testsPassed.png)
