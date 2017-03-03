@@ -1,3 +1,9 @@
+# Software Testing and QA - Proj 1
+# Alex Cote - alc552
+# Ginny Tabor - glt79
+# Patrick Boudreaux - pdb145
+# Damian Cooper - dcc198
+
 import math
 import re
 

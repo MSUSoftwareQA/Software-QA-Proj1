@@ -1,5 +1,3 @@
-#/bin/python3
-
 # Software Testing and QA - Proj 1
 # Alex Cote - alc552
 # Ginny Tabor - glt79

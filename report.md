@@ -1,0 +1,5 @@
+Assignment 1
+
+This first assignment helped to demonstrate to our team the benefits of test driven development. Our assignment was to create an application that would be tested by using pytest. This Framework allows you to make testing assertions in order to test the functionality of a program using a TDD approach. Using this application we were able to use TDD in order to determine the quality of our functions.
+
+The TDD approach used in this assignment was prefered by our group over other development options. This TDD approach allows you to directly test a singular piece of functionality to help developers determine if functions perform the way they are supposed to by supplying values that are expected by the functions. The other way TDD has helped the group determine if a function is robust is to test how that function handles improper using pytest. These reasons are why our group enjoyed the TDD approach 
