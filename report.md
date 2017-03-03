@@ -1,4 +1,4 @@
-Assignment 1
+## Assignment 1
 
 This first assignment helped to demonstrate to our team the benefits of test driven development. Our assignment was to create an application that would be tested by using pytest. This Framework allows you to make testing assertions in order to test the functionality of a program using a TDD approach. Using this application we were able to use TDD in order to determine the quality of our functions.
 
