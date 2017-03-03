@@ -17,7 +17,7 @@
 
 ## Running tests
 
-1. Open shell and move to directory containing program files.
+1. Open shell and move to the "Source" directory of the project files.
 2. Run the test with: pytest test.py
 	* If all tests have passed, a green success message will appear telling you how many of the tests have passed.
 	* If any of the tests fail, a red failure message will be printed showing which of the tests have failed and where.
@@ -26,7 +26,7 @@ Each test within the [test.py](https://github.com/MSUSoftwareQA/Software-QA-Proj
 
 ## Running the program
 
-1. Open shell and move to directory containing program files.
+1. Open shell and move to the "Source" directory of the project files.
 2. Run: python3 main.py
 
 The program will then step you through how to run each part of the program.
