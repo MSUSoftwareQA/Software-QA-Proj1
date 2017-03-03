@@ -27,6 +27,6 @@ Each test within the [test.py](https://github.com/MSUSoftwareQA/Software-QA-Proj
 ## Running the program
 
 1. Open shell and move to directory containing program files.
-2. Run: python3 formulas.py
+2. Run: python3 main.py
 
 The program will then step you through how to run each part of the program.
